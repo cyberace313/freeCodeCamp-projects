@@ -1,0 +1,214 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* HEADER SECTION */
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+  background-color: bisque;
+  position: sticky;
+  top: 0;
+  margin-bottom: 40px;
+}
+
+.logo img {
+  width: 300px;
+}
+
+#header ul {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+#header ul a {
+  text-decoration: none;
+  color: black;
+}
+
+/* HERO SECTION */
+
+#form {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+#form input {
+  width: 300px;
+  padding: 5px;
+}
+
+#form #submit {
+  width: 150px;
+  padding: 10px 10px;
+  background-color: rgb(255, 204, 0);
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 3px;
+  margin-top: -10px;
+  transition: 0.2s ease-in-out;
+}
+
+#form #submit:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
+}
+
+/* FEATURES SECTION */
+
+#features {
+  margin: 100px auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: space-between;
+  scroll-margin: 100px;
+}
+
+.feature {
+  display: flex;
+  gap: 120px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  color: orange;
+  font-size: 20px;
+}
+
+.text h2 {
+  padding-bottom: 10px;
+}
+
+/* HOW IT WORKS SECTION */
+
+#how-it-works {
+  text-align: center;
+  margin-bottom: 100px;
+  scroll-margin: 80px;
+}
+
+/* PRICING SECTION */
+
+.card-container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 300px;
+  background-color: #f8f8f8;
+  border: 1px solid black;
+  margin-bottom: 100px;
+}
+
+.card-header {
+  background-color: #e6e2e2;
+  height: 50px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 30px auto;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: rgb(255, 204, 0);
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 3px;
+  margin-top: -10px;
+  transition: 0.2s ease-in-out;
+  margin-top: 10px;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 100px;
+  background-color: #e6e2e2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.headings {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.div {
+  word-spacing: 5px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+  #header ul {
+    gap: 40px;
+    padding: 3px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .feature {
+    gap: 70px;
+  }
+}
