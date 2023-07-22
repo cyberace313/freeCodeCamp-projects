@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d7b3665fa4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header id="header">
+      <nav id="navbar">
+        <h1>Portfolio</h1>
+        <ul>
+          <a href="#welcome-section"><li>About</li></a>
+          <a href="#projects"><li>Work</li></a>
+          <a href="#contact-section"><li>Contact</li></a>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- WELCOME SECTION -->
+
+    <section id="welcome-section">
+      <h1 id="title">Hey I am Zafar</h1>
+      <h4 id="subtitle">a web developer</h4>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+
+    <section id="projects">
+      <h1 id="projects-title">These are some of my projects</h1>
+
+      <div class="wrapper">
+        <div class="project-tile">
+          <a href="">
+            <img src="./images/developer_landing_page.png" alt="" />
+            <p class="wrapper-p">Developer Landing Page</p>
+          </a>
+        </div>
+        <div class="project-tile">
+          <a href="">
+            <img src="./images/playTunes.png" alt="" />
+            <p class="wrapper-p">Music Website</p>
+          </a>
+        </div>
+        <div class="project-tile">
+          <a href="">
+            <img src="./images/restaurant_website.png" alt="" />
+            <p class="wrapper-p">Restaurant Website</p>
+          </a>
+        </div>
+      </div>
+      <div class="project-tile"></div>
+      <div class="button">
+        Show All
+        <span><i class="fa-solid fa-chevron-right"></i></span>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+
+    <section id="contact-section">
+      <h1 id="contact-title">Let's work together...</h1>
+      <p id="contact-subtitle">How do you take your coffee?</p>
+
+      <ul id="contact-ul">
+        <a href="https://www.facebook.com/" target="_blank" id="profile-link"
+          ><li><i class="fa-brands fa-facebook"></i> Facebook</li></a
+        >
+        <a href="" id="profile-link" target="_blank"
+          ><li><i class="fa-brands fa-github"></i> Github</li></a
+        >
+        <a href="" id="profile-link" target="_blank"
+          ><li><i class="fa-brands fa-twitter"></i> Twitter</li></a
+        >
+        <a href="" id="profile-link" target="_blank"
+          ><li><i class="fa-solid fa-at"></i> Send an email</li></a
+        >
+        <a href="" id="profile-link" target="_blank"
+          ><li><i class="fa-solid fa-phone"></i> Call me</li></a
+        >
+      </ul>
+    </section>
+
+    <!-- FOOTER HORIZONTAL RULE -->
+
+    <div class="footer-rule"></div>
+
+    <!-- FOOTER -->
+
+    <footer id="footer">
+      <p>
+        **This is just a fake portfolio. All the projects and contact details
+        given are not real.
+      </p>
+      <p>&copy; Created by Zafar Arifi</p>
+    </footer>
+  </body>
+</html>

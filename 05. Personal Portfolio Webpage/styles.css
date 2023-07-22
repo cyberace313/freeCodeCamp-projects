@@ -1,0 +1,213 @@
+:root {
+  --main-grey: #303841;
+  --main-blue: #45567d;
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* HEADER SECTION */
+
+#header {
+  position: sticky;
+  top: 0;
+}
+
+#navbar {
+  background-color: var(--main-red);
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 150px;
+  align-items: center;
+}
+
+#navbar h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 40px;
+  color: #ecf2ff;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+/* WELCOME SECTION */
+
+#welcome-section {
+  height: calc(100vh - 78px);
+  background-color: var(--main-grey);
+  background: linear-gradient(#181b1f, var(--main-grey));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+  scroll-margin: 80px;
+}
+
+#title {
+  color: var(--main-white);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3rem;
+}
+
+#subtitle {
+  color: var(--main-red);
+  font-family: "ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  background-color: var(--main-blue);
+  color: white;
+  padding: 5rem 180px;
+  scroll-margin: 80px;
+}
+
+#projects-title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+#projects img {
+  height: 400px;
+  width: 300px;
+}
+
+.project-tile a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.wrapper-p {
+  background-color: var(--main-grey);
+  text-align: center;
+  padding: 10px;
+  margin-top: -10px;
+}
+
+.rule {
+  height: 1px;
+  background-color: white;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.button {
+  max-width: 10%;
+  text-align: center;
+  padding: 10px 16px;
+  background-color: var(--main-grey);
+  border-radius: 4px;
+  transition: 0.2s ease-in-out;
+  margin: 50px auto 0;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--main-red);
+  transition: 0.2s ease-in-out;
+}
+
+/* CONTACT SECTION */
+
+#contact-section {
+  background-color: var(--main-grey);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 200px;
+  scroll-margin: 80px;
+}
+
+#contact-title {
+  font-size: 4rem;
+  font-family: "ubuntu", sans-serif;
+}
+
+#contact-subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-family: "ubuntu", sans-serif;
+  font-weight: 300;
+}
+
+#contact-ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  font-size: 1.6rem;
+  font-family: "Ubuntu", sans-serif;
+  padding-top: 50px;
+}
+
+#contact-ul a {
+  color: white;
+  text-decoration: none;
+}
+
+/* FOOTER RULE */
+
+.footer-rule {
+  height: 6px;
+  background-color: var(--main-red);
+  width: 100%;
+}
+
+/* FOOTER SECTION */
+
+#footer {
+  background-color: var(--main-grey);
+  padding: 50px 200px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 568px) {
+  #navbar {
+    padding: 50px;
+    flex-direction: column;
+  }
+}
