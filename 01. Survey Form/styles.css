@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  padding-top: 50px;
+  font-family: "roboto", sans-serif;
+  font: 16px;
+  height: 100vh;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+#description {
+  color: white;
+  font-style: italic;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+#survey-form {
+  width: 50%;
+  margin: 50px auto;
+}
+
+.container {
+  width: 40%;
+  margin: 50px auto;
+  text-align: left;
+  background-color: #0a2647;
+  color: white;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.essentials input {
+  width: 100%;
+  padding: 10px 16px;
+  margin: 15px auto;
+}
+
+input {
+  padding: 10px 16px;
+  margin: 15px auto;
+}
+
+.dropdown {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin: 40px auto;
+}
+
+.radio-btn {
+  padding: 50px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.checkbox {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+span {
+  font-size: 10px;
+}
+
+.improve h4 {
+  margin-bottom: 10px;
+}
+
+.recommend h4 {
+  margin-bottom: 10px;
+}
+
+select {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#submit {
+  color: white;
+  background-color: #19a7ce;
+  border: none;
+  width: 100%;
+  margin: 30px auto 10px;
+  padding: 10px 0;
+}
